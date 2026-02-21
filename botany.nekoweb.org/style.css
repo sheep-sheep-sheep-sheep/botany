@@ -278,3 +278,39 @@ footer {
     margin-top: 6px;
     font-size: 0.8em;
 }
+
+/* ----------------- Old Writing Hub ----------------- */
+.hub-subtitle {
+    text-align: center;
+}
+
+.old-comments {
+    margin-top: 24px;
+}
+
+.comment-card {
+    border: 2px solid #F9A8D4;
+    background: #FFF0F5;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+}
+
+/* ----------------- Music Toggle ----------------- */
+.music-toggle {
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    z-index: 999;
+    border: 2px solid #F9A8D4;
+    background: #FFF0F5;
+    color: #C08497;
+    border-radius: 12px;
+    padding: 8px 12px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.music-on .music-toggle {
+    box-shadow: 0 0 12px #FBCFE8;
+}
