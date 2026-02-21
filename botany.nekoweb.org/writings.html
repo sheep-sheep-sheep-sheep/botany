@@ -17,6 +17,7 @@
 </header>
 
 <nav>
+    <!-- Primary navigation for writing sections. -->
     <a href="index.html">HOME</a>
     <a href="#stories">STORIES</a>
     <a href="#poetry">POETRY</a>
@@ -26,6 +27,7 @@
 <main>
 
 <section id="intro" class="terminal-box">
+    <!-- Intro terminal-style status output. -->
     <p>> Access granted.</p>
     <p>> Welcome to the internal writing database.</p>
     <p>> Select file to open.</p>
@@ -83,6 +85,7 @@
 </footer>
 
 <script>
+// Toggle visibility of a poem/fragment block by id.
 function toggleFile(id) {
     var element = document.getElementById(id);
     if (element.style.display === "block") {
