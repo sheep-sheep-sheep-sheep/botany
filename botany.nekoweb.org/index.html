@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Floof Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Autoplay Music -->
+<audio autoplay loop>
+    <source src="breakcore.mp3" type="audio/mpeg">
+</audio>
+
+<div class="scanlines"></div>
+
+<header>
+    <h1 class="glitch" data-text="FLOOF HOME">FLOOF HOME</h1>
+    <marquee behavior="scroll" direction="left">
+WELCOME TO MY DIGITAL ARCHIVE ★ WRITINGS ★ OCS ★
+    </marquee>
+</header>
+
+<nav>
+    <a href="writings.html">WRITING</a>
+    <a href="#ocs">OC FILES</a>
+    <a href="#badges">BADGES</a>
+    <a href="guestbook.html">GUESTBOOK</a>
+</nav>
+
+<main>
+
+<section id="writing">
+    <h2>✦ Writing Archive ✦</h2>
+    <ul class="writing-list">
+        <li><a href="#">Story Title One</a></li>
+        <li><a href="#">Story Title Two</a></li>
+        <li><a href="#">Poem / Fragment</a></li>
+    </ul>
+</section>
+
+<section id="ocs">
+    <h2>✦ OC Profiles ✦</h2>
+
+    <div class="oc-grid">
+        
+        <div class="oc-card">
+            <button onclick="toggleProfile('oc1')">CHARACTER_01.exe</button>
+            <div id="oc1" class="oc-profile">
+                <img src="oc1.png" alt="OC 1">
+                <p><strong>Name:</strong> Floof</p>
+                <p><strong>Info:</strong> Naip Director!</p>
+            </div>
+        </div>
+
+        <div class="oc-card">
+            <button onclick="toggleProfile('oc2')">CHARACTER_02.sys</button>
+            <div id="oc2" class="oc-profile">
+                <img src="oc2.png" alt="OC 2">
+                <p><strong>Name:</strong> Doctor Rabbit</p>
+                <p><strong>Info:</strong> Short description goes here.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="badges">
+    <h2>✦ Badge Collection ✦</h2>
+    <div class="badge-box">
+        <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button4.gif"></a><!-- button by callie.garden -->
+        <img src="https://web.badges.world/badges/operated/slackware.png">
+        <img src="https://cyber.dabamos.de/88x31/can.gif">
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>VISITOR COUNT: 000666</p>
+    <p>Best viewed on: slackware</p>
+</footer>
+
+<script>
+function toggleProfile(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>

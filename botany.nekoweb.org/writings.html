@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Floof Home - Writing Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="scanlines"></div>
+
+<header>
+    <h1 class="glitch" data-text="WRITING_ARCHIVE.exe">
+        WRITING_ARCHIVE.exe
+    </h1>
+</header>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="#stories">STORIES</a>
+    <a href="#poetry">POETRY</a>
+    <a href="guestbook.html">GUESTBOOK</a>
+</nav>
+
+<main>
+
+<section id="intro" class="terminal-box">
+    <p>> Access granted.</p>
+    <p>> Welcome to the internal writing database.</p>
+    <p>> Select file to open.</p>
+</section>
+
+<section id="stories">
+    <h2>✦ Story Files ✦</h2>
+
+    <div class="file-grid">
+
+        <div class="file-card">
+            <a class="file-link" href="stories/story1.html">
+               overseer9.txt
+                <span class="file-meta">[ 12KB | updated 02.16.26 ]</span>
+            </a>
+        </div>
+
+        <div class="file-card">
+            <a class="file-link" href="stories/story2.html">
+                STORY_02.txt
+                <span class="file-meta">[ 48KB | updated 02.12.26 ]</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="poetry">
+    <h2>✦ Fragment Files ✦</h2>
+
+    <div class="file-grid">
+
+        <div class="file-card">
+            <button onclick="toggleFile('poem1')">
+                FRAGMENT_A.log
+            </button>
+
+            <div id="poem1" class="file-content">
+                <p>
+                    soft neon hum  
+                    static in the bloodstream  
+                    something flickers alive
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>ARCHIVE STATUS: ACTIVE</p>
+</footer>
+
+<script>
+function toggleFile(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>

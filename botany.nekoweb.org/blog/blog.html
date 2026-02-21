@@ -1,0 +1,37 @@
+<!--#set var="pageTitle" value="Floof Home - Blog" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!--#echo var="pageTitle" --></title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="scanlines"></div>
+
+<header>
+    <h1 class="glitch" data-text="BLOG_ARCHIVE">BLOG_ARCHIVE</h1>
+</header>
+
+<nav>
+    <a href="../index.html">HOME</a>
+    <a href="../writings.html">ARCHIVE</a>
+    <a href="../blog/blog.html">BLOG</a>
+</nav>
+
+<main class="blog-container">
+
+    <!-- Include Blog Entries -->
+    <!--# include file="entries/post1.html" -->
+    <!--#include virtual="entries/post2.html" -->
+    <!--#include virtual="entries/post3.html" -->
+
+</main>
+
+<footer>
+    <p>BLOG STATUS: ACTIVE</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+/* ----------------- Base ----------------- */
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background: #FFEAF2; /* soft pastel pink */
+    color: #C08497; /* muted pink-purple text */
+    overflow-x: hidden;
+}
+
+/* ----------------- Headers ----------------- */
+h1, h2 {
+    text-align: center;
+    color: #D977A3; /* pastel pink */
+    text-shadow:
+        0 0 4px #F9A8D4,
+        0 0 8px #FBCFE8; /* subtle pink glow */
+}
+
+header {
+    padding: 20px;
+    border-bottom: 2px solid #F9A8D4; /* soft pink accent */
+}
+
+/* ----------------- Nav ----------------- */
+nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #C08497;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 6px #FBCFE8; /* pastel pink glow on hover */
+}
+
+/* ----------------- Writing List ----------------- */
+.writing-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.writing-list li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+.writing-list a {
+    color: #C08497;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.writing-list a:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 6px #FBCFE8;
+}
+
+/* ----------------- OC Grid ----------------- */
+.oc-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.oc-card button {
+    background: #FFF0F5; /* very soft pink button bg */
+    border: 2px solid #F9A8D4; /* pastel pink border */
+    color: #C08497;
+    padding: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+.oc-card button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 12px #FBCFE8;
+}
+
+.oc-profile {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #F9A8D4;
+    background: #FFF0F5;
+    text-align: center;
+    max-width: 200px;
+    border-radius: 12px;
+}
+
+.oc-profile img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+/* ----------------- Badge Box ----------------- */
+.badge-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badge-box img {
+    height: 31px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 8px;
+}
+
+.badge-box img:hover {
+    transform: scale(1.1) rotate(-3deg);
+    filter: drop-shadow(0 0 5px #FBCFE8);
+}
+
+/* ----------------- File Grid ----------------- */
+.file-grid {
+    display: flex;
+    justify-content: center;  /* centers all items horizontally */
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;       /* ensures content inside is centered */
+}
+
+/* Each file item */
+.file-card,
+.file-link {
+    display: inline-block;    /* shrink to content */
+    text-align: center;       /* center text inside */
+}
+
+/* Buttons / links inside file-card */
+.file-card button,
+.file-link {
+    border: 2px solid #F9A8D4;
+    color: #C08497;
+    padding: 12px 20px;       /* horizontal + vertical padding */
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;     /* shrink to content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    background: #FFF0F5;
+}
+
+/* Hover effect */
+.file-card button:hover,
+.file-link:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #FBCFE8;
+}
+
+/* ----------------- Story Pages ----------------- */
+.story-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.story-meta {
+    border: 2px solid #F9A8D4;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #FFF0F5;
+    font-size: 0.9em;
+    border-radius: 12px;
+}
+
+.story-content {
+    background: #FFF0F5;
+    padding: 20px;
+    border: 2px solid #D977A3;
+    line-height: 1.6;
+    border-radius: 12px;
+}
+
+.story-content h2 {
+    text-align: left;
+}
+
+/* ----------------- Blog Posts ----------------- */
+.blog-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.blog-post {
+    background: #FFF0F5;
+    border: 2px solid #F9A8D4;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 12px #D977A3;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #FBCFE8;
+}
+
+.blog-post h2 {
+    color: #D977A3;
+    margin-top: 0;
+}
+
+.blog-post .post-meta {
+    font-size: 0.8em;
+    color: #F9A8D4;
+    margin-bottom: 10px;
+}
+
+/* ----------------- Terminal Box ----------------- */
+.terminal-box {
+    background: #FFF0F5;
+    border: 2px solid #F9A8D4;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 700px;
+    font-size: 0.9em;
+    box-shadow: 0 0 10px #D977A3;
+    border-radius: 12px;
+}
+
+/* ----------------- Footer ----------------- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    border-top: 2px solid #FBCFE8;
+}
+
+/* ----------------- Scanlines / Glitch ----------------- */
+.scanlines {
+    display: none; /* remove harsh CRT effect */
+}
+
+/* ----------------- Glitch Headers ----------------- */
+.glitch {
+    position: relative;
+    font-size: 3em;
+    color: #D977A3;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    color: #D977A3;
+}
