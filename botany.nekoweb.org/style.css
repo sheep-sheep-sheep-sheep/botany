@@ -261,3 +261,20 @@ footer {
     overflow: hidden;
     color: #D977A3;
 }
+
+/* Expandable text content for fragment files. */
+.file-content {
+    display: none;
+    margin-top: 10px;
+    padding: 12px;
+    border: 2px solid #F9A8D4;
+    background: #FFF0F5;
+    border-radius: 12px;
+    max-width: 420px;
+}
+
+.file-meta {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.8em;
+}

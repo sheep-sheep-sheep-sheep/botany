@@ -8,14 +8,12 @@
 
 <body>
 
-<!-- Autoplay Music -->
-<audio autoplay loop>
-    <source src="breakcore.mp3" type="audio/mpeg">
-</audio>
+<!-- Background music is intentionally disabled until a track is uploaded. -->
 
 <div class="scanlines"></div>
 
 <header>
+    <!-- Main site banner and scrolling message. -->
     <h1 class="glitch" data-text="FLOOF HOME">FLOOF HOME</h1>
     <marquee behavior="scroll" direction="left">
 WELCOME TO MY DIGITAL ARCHIVE ★ WRITINGS ★ OCS ★
@@ -23,6 +21,7 @@ WELCOME TO MY DIGITAL ARCHIVE ★ WRITINGS ★ OCS ★
 </header>
 
 <nav>
+    <!-- Primary site navigation. -->
     <a href="writings.html">WRITING</a>
     <a href="#ocs">OC FILES</a>
     <a href="#badges">BADGES</a>
@@ -32,6 +31,7 @@ WELCOME TO MY DIGITAL ARCHIVE ★ WRITINGS ★ OCS ★
 <main>
 
 <section id="writing">
+    <!-- Quick links to featured writing pieces. -->
     <h2>✦ Writing Archive ✦</h2>
     <ul class="writing-list">
         <li><a href="#">Story Title One</a></li>
@@ -43,12 +43,13 @@ WELCOME TO MY DIGITAL ARCHIVE ★ WRITINGS ★ OCS ★
 <section id="ocs">
     <h2>✦ OC Profiles ✦</h2>
 
+    <!-- Expandable OC profile cards. -->
     <div class="oc-grid">
         
         <div class="oc-card">
             <button onclick="toggleProfile('oc1')">CHARACTER_01.exe</button>
             <div id="oc1" class="oc-profile">
-                <img src="oc1.png" alt="OC 1">
+                <img src="https://placehold.co/150x150/ffeaf2/c08497?text=OC+1" alt="OC 1 placeholder portrait">
                 <p><strong>Name:</strong> Floof</p>
                 <p><strong>Info:</strong> Naip Director!</p>
             </div>
@@ -57,7 +58,7 @@ WELCOME TO MY DIGITAL ARCHIVE ★ WRITINGS ★ OCS ★
         <div class="oc-card">
             <button onclick="toggleProfile('oc2')">CHARACTER_02.sys</button>
             <div id="oc2" class="oc-profile">
-                <img src="oc2.png" alt="OC 2">
+                <img src="https://placehold.co/150x150/ffeaf2/c08497?text=OC+2" alt="OC 2 placeholder portrait">
                 <p><strong>Name:</strong> Doctor Rabbit</p>
                 <p><strong>Info:</strong> Short description goes here.</p>
             </div>
@@ -69,9 +70,9 @@ WELCOME TO MY DIGITAL ARCHIVE ★ WRITINGS ★ OCS ★
 <section id="badges">
     <h2>✦ Badge Collection ✦</h2>
     <div class="badge-box">
-        <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button4.gif"></a><!-- button by callie.garden -->
-        <img src="https://web.badges.world/badges/operated/slackware.png">
-        <img src="https://cyber.dabamos.de/88x31/can.gif">
+        <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button4.gif" alt="Nekoweb button"></a><!-- button by callie.garden -->
+        <img src="https://web.badges.world/badges/operated/slackware.png" alt="Powered by Slackware badge">
+        <img src="https://cyber.dabamos.de/88x31/can.gif" alt="Animated can badge">
     </div>
 </section>
 
@@ -83,6 +84,7 @@ WELCOME TO MY DIGITAL ARCHIVE ★ WRITINGS ★ OCS ★
 </footer>
 
 <script>
+// Toggle visibility of an OC profile by id.
 function toggleProfile(id) {
     var element = document.getElementById(id);
     if (element.style.display === "block") {
