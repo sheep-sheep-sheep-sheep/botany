@@ -21,6 +21,29 @@ header {
     border-bottom: 2px solid #F9A8D4; /* soft pink accent */
 }
 
+
+.header-scroll {
+    margin: 14px auto 0;
+    max-width: 820px;
+    border: 2px solid #F9A8D4;
+    border-radius: 999px;
+    background: #FFF0F5;
+    padding: 8px 0;
+    color: #C08497;
+}
+
+.header-scroll a {
+    color: #C08497;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+.header-scroll a:hover {
+    text-shadow: 0 0 6px #FBCFE8;
+}
+
+
 /* ----------------- Nav ----------------- */
 nav {
     text-align: center;
