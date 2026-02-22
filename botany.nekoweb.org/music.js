@@ -77,6 +77,7 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         buildToggle();
+        startMusic();
 
         window.addEventListener('pointerdown', function initialStart() {
             startMusic();
