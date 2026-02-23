@@ -19,10 +19,12 @@ h1, h2 {
 header {
     padding: 20px;
     border-bottom: 2px solid #F9A8D4; /* soft pink accent */
+    text-align: center;
 }
 
 
 .header-scroll {
+    display: block;
     margin: 14px auto 0;
     max-width: 820px;
     border: 2px solid #F9A8D4;
